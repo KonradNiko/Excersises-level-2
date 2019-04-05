@@ -1,0 +1,140 @@
+<!-- 
+    Układ 16:9
+    Ma być podobny (nie pixel w pixel)
+    Ma być responsywny (dostosowoywać się do wysokości przeglądarki)
+
+    ZŁOTE ZASADY
+    - Zrób tak jak potrafisz i tyle ile potrafisz
+    - Próbuj/testuj/sprawdzaj co by było. Takie próbowanie to najważniejsze cechy programisty
+    - Nie przeskakuj ćwiczenia. 
+ -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A dream about old Japan</title>
+    <style>
+        body {}
+
+        div.picture {
+            background-color: #a3ebde;
+            width: 90vh;
+            height: 50vh;
+            margin: 15vh auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            height: 100%;
+
+        }
+
+        .logo {
+            position: absolute;
+            height: 25%;
+            bottom: 5%;
+            left: 3%;
+            z-index: 12;
+        }
+
+        .tree {
+            position: absolute;
+            height: 30%;
+            top: 40%;
+            right: 0;
+            z-index: 11;
+        }
+
+        .ground {
+            position: absolute;
+            top: 70%;
+            right: 0;
+            z-index: 10;
+        }
+
+        .ground2 {
+            position: absolute;
+            height: 102%;
+            top: 54%;
+            right: 0;
+            z-index: 9;
+        }
+
+        .ground3 {
+            position: absolute;
+            height: 102%;
+            top: 46%;
+            right: 0;
+            z-index: 8;
+        }
+
+        .ground4 {
+            position: absolute;
+            top: 45%;
+            right: 0;
+            z-index: 7;
+        }
+
+        .ground5 {
+            position: absolute;
+            height: 102%;
+            top: 38%;
+            right: 0;
+            z-index: 6;
+        }
+
+        .volcano {
+            position: absolute;
+            top: 21%;
+            left: 20%;
+            z-index: 5;
+        }
+
+        .sun {
+            position: absolute;
+            height: 14%;
+            top: 6%;
+            left: 10%;
+        }
+
+        .cloudLeft {
+            position: absolute;
+            height: 4%;
+            top: 26%;
+            left: 10%;
+        }
+
+        .cloudRight {
+            position: absolute;
+            height: 7%;
+            top: 10%;
+            right: 4%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="picture">
+
+        <!-- img[src=img/japan$.png]*11 -->
+        <img class="volcano" src="img/japan1.png" alt="">
+        <img class="ground5" src="img/japan2.png" alt="">
+        <img class="ground4" src="img/japan3.png" alt="">
+        <img class="ground3" src="img/japan4.png" alt="">
+        <img class="ground2" src="img/japan5.png" alt="">
+        <img class="ground" src="img/japan6.png" alt="">
+        <img class="sun" src="img/japan7.png" alt="">
+        <img class="cloudLeft" src="img/japan8.png" alt="">
+        <img class="cloudRight" src="img/japan9.png" alt="">
+        <img class="tree" src="img/japan10.png" alt="">
+        <img class="logo" src="img/japan11.png" alt="">
+
+    </div>
+</body>
+
+</html>

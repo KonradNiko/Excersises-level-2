@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek</title>
+    <style>
+        span {
+            display: inline-block;
+            background-color: red;
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        span:hover {
+            color: black;
+        }
+
+        .front {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            background-color: chartreuse;
+            transition: 1s;
+        }
+
+        span:hover~.front {
+            width: 40vh;
+            height: 40vh;
+            bottom: calc(50% - 20vh);
+            left: calc(50% - 20vh);
+            z-index: 3;
+        }
+
+        .roof {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            background-color: brown;
+            transition: 2s;
+        }
+
+        .budujemy:hover~.roof {
+            width: 28vh;
+            height: 28vh;
+            bottom: calc(50% + 6vh);
+            left: calc(50% - 14vh);
+            transform: rotate(45deg);
+        }
+
+        .windowLeft {
+            background-color: yellow;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            transition: 1s;
+            transition-delay: 0.1s;
+        }
+
+
+        .budujemy:hover~.windowLeft {
+            width: 10vh;
+            height: 10vh;
+            bottom: calc(50% + 5vh);
+            left: calc(50% - 15vh);
+            z-index: 4;
+        }
+
+        .windowRight {
+            background-color: yellow;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            transition: 1s;
+            transition-delay: 0.2s;
+        }
+
+        .budujemy:hover~.windowRight {
+            width: 10vh;
+            height: 10vh;
+            bottom: calc(50% + 5vh);
+            left: calc(50% + 5vh);
+            z-index: 4;
+        }
+
+        .door {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            transition: 5s;
+            background-color: yellow;
+            transition: 1s;
+            transition-delay: 0.3s;
+        }
+
+
+        .budujemy:hover~.door {
+            width: 10vh;
+            height: 15vh;
+            bottom: calc(50% - 20vh);
+            left: calc(50% - 5vh);
+            z-index: 4;
+        }
+
+        .chimney {
+            background-color: orangered;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            transition: 1s;
+            transition-delay: 1s;
+        }
+
+        .budujemy:hover~.chimney {
+            width: 5vh;
+            height: 10vh;
+            bottom: calc(60% + 15vh);
+            left: calc(50% + 10vh);
+            z-index: -1;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <span class="budujemy">HOVER ON ME</span>
+    <div class="front"></div>
+    <div class="roof"></div>
+    <div class="windowLeft"></div>
+    <div class="windowRight"></div>
+    <div class="door"></div>
+    <div class="chimney"></div>
+</body>
+
+</html>
